@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <h2><%= @message %>!</h2>
+  <p class="alert alert-info" role="alert"><%= get_flash(@conn, :hello_info) %></p>
+  <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :hello_error) %></p>
+</div>
+
+<div class="room">
+  <div id="messages"></div>
+  <input id="chat-input" name="" type="text" value="">
+</div>

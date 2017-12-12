@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <p><%= handle_info @conn %></p>
+
+  <h3>Keys for the conn Struct</h3>
+
+  <%= for key <- connection_keys @conn do %>
+    <%= render BiWeb.SharedView, "key.html", key: key %>
+  <%= end %>
+</div>
